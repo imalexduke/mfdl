@@ -1,0 +1,29 @@
+{
+  "name": "mediafire-direct-link-generator",
+  "version": "1.0.0",
+  "description": "Generates direct download link for mediafire files",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imalexduke/mfdl.git"
+  },
+  "keywords": [
+    "mediafire",
+    "url",
+    "download",
+    "direct"
+  ],
+  "author": "AlexDuke",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/imalexduke/mfdl/issues"
+  },
+  "homepage": "https://github.com/imalexduke/mfdl#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
