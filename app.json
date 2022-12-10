@@ -1,0 +1,116 @@
+{
+  "#comment": "",
+  "html": {
+    "@lang": "en",
+    "head": {
+      "meta": [
+        {
+          "@charset": "UTF-8"
+        },
+        {
+          "@http-equiv": "X-UA-Compatible",
+          "@content": "IE=edge"
+        },
+        {
+          "@name": "viewport",
+          "@content": "width=device-width, initial-scale=1.0"
+        }
+      ],
+      "title": "Mediafire Direct DL Link Generator"
+    },
+    "body": {
+      "div": {
+        "@class": "container",
+        "header": {
+          "h2": {
+            "a": {
+              "@href": "#",
+              "i": {
+                "@class": "ion-plane"
+              },
+              "#text": "MF Direct Link Generator"
+            }
+          },
+          "nav": {
+            "ul": {
+              "li": [
+                {
+                  "a": {
+                    "@href": "https://mfdl.cyclic.app",
+                    "@title": "Home",
+                    "#text": "Home"
+                  }
+                },
+                {
+                  "a": {
+                    "@href": "https://mfdl.cyclic.app",
+                    "@title": "Contact",
+                    "#text": "Contact"
+                  }
+                },
+                {
+                  "a": {
+                    "@href": "https://mfdl.cyclic.app",
+                    "@title": "Tools",
+                    "#text": "Tools"
+                  }
+                },
+                {
+                  "a": {
+                    "@class": "btn",
+                    "@href": "https://mfdl.cyclic.app",
+                    "@title": "SupportUS",
+                    "#text": "SupportUS"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "div": {
+          "@class": "cover",
+          "h1": "Generate Mediafire Diretct Link",
+          "form": {
+            "@class": "flex-form",
+            "label": {
+              "@for": "from",
+              "i": {
+                "@class": "ion-location"
+              }
+            },
+            "input": [
+              {
+                "@type": "search",
+                "@placeholder": "Enter Mediafire file URL",
+                "@id": "url"
+              },
+              {
+                "@type": "button",
+                "@value": "Get",
+                "@onclick": "grab()",
+                "@onchange": "grab()"
+              }
+            ]
+          },
+          "div": [
+            {
+              "@id": "generatedlink"
+            },
+            {
+              "@id": "madeby",
+              "span": {
+                "b": "YOUR_FILE_ID",
+                "#text": "Try - https://mfdl.cyclic.app/ddl.php?id="
+              }
+            }
+          ]
+        }
+      },
+      "script": "function grab() {\n let i = 'https://mfdl.cyclic.app/ddl.php?id='+document.getElementById('url').value.split(\"/\")[4]+'';\ndocument.getElementById('url').value = i;\n}",
+      "style": "@import url('https://fonts.googleapis.com/css?family=Lato:400,700');\n\n*, *:before, *:after {\n  -webkit-box-sizing: inherit;\n  -moz-box-sizing: inherit;\n  box-sizing: inherit;\n}\n\n::-webkit-input-placeholder {\n  color: #56585b;\n}\n\n::-moz-placeholder {\n  color: #56585b;\n}\n\n:-moz-placeholder {\n  color: #56585b;\n}\n\nhtml {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: 'Lato', sans-serif;\n  margin: 0;\n  background: url('https://source.unsplash.com/G8rRItjrwkA') no-repeat center center fixed;\n  -webkit-background-size: cover;\n  -moz-background-size: cover;\n  background-size: cover;\n  color: #0a0a0b;\n  overflow: hidden;\n}\n\nul, nav{\n  list-style: none;\n  padding: 0;\n}\n\na {\n  color: #fff;\n  text-decoration: none;\n  cursor: pointer;\n  opacity: 0.9;\n}\n\na:hover {\n  opacity: 1;\n}\n\nh1 {\n  font-size: 3rem;\n  font-weight: 700;\n  color: #fff;\n  margin: 0 0 1.5rem;\n}\n\ni {\n  font-size: 1.3rem;\n}\n\nheader {\n  position: absolute;\n  top: 0;\n  left: 0;\n  z-index: 10;\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  color: #fff;\n  padding: 10px 100px 0;\n}\n\nheader nav ul {\n  display: flex;\n}\n\nheader nav li{\n  margin: 0 15px;\n}\n\nheader nav li:first-child{\n  margin-left: 0; \n}\n\nheader nav li:last-child{\n  margin-right: 0;  \n}\n\na.btn {\n  color: #fff;\n  padding: 10px;\n  border: 1px solid rgba(255,255,255,0.5);\n  -webkit-transition: all 0.2s;\n  -moz-transition: all 0.2s;\n  transition: all 0.2s;\n}\n\na.btn:hover {\n  background: #d73851;\n  border: 1px solid #d73851;\n  color: #fff;\n}\n\n.cover  {\n  height: 100vh;\n  width: 100%;\n  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.05)), to(rgba(0,0,0,0)));\n  background: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);\n  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);\n  padding: 20px 50px;\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  flex-direction: column;\n  -webkit-box-pack: center;\n  justify-content: center;\n  -webkit-box-align: center;\n  align-items: center;\n}\n\n.flex-form input[type=\"button\"] {\n  background: #ef3f5a;\n  border: 1px solid #ef3f5a;\n  color: #fff;\n  padding: 0 30px;\n  cursor: pointer;\n  -webkit-transition: all 0.2s;\n  -moz-transition: all 0.2s;\n  transition: all 0.2s;\n}\n\n.flex-form input[type=\"button\"]:hover {\n  background: #d73851;\n  border: 1px solid #d73851;\n}\n\n.flex-form {\n  display: -webkit-box;\n  display: flex;\n  z-index: 10;\n  position: relative;\n  width: 500px;\n  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);\n}\n\n.flex-form > * {\n  border: 0;\n  padding: 0 0 0 10px;\n  background: #fff;\n  line-height: 50px;\n  font-size: 1rem;\n  border-radius: 0;\n  outline: 0;\n  -webkit-appearance: none;\n}\n\ninput[type=\"search\"] {\n  flex-basis: 500px;\n}\n\n#madeby {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  padding: 25px 100px;\n  color: #fff;\n}\n\n@media all and (max-width:800px) {\n  body {\n    font-size: 0.9rem;\n  }\n\n  .flex-form {\n    width: 100%;\n  }\n\n  input[type=\"search\"] {\n    flex-basis: 100%;\n  }\n\n  .flex-form > * {\n    font-size: 0.9rem;\n  }\n\n  header {\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    flex-direction: column;\n    padding: 10px !important;\n  }\n\n  header h2 {\n    margin-bottom: 15px;\n  }\n\n  h1 {\n    font-size: 2rem;\n  }\n\n  .cover {\n    padding: 20px;\n  }\n\n  #madeby {\n    padding: 30px 20px;\n  }\n}\n\n@media all and (max-width:360px) {\n  header nav li{\n    margin: 0 10px;\n  }\n\n  .flex-form {\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n    flex-direction: column;\n  }\n\n  input[type=\"search\"] {\n    flex-basis: 0;\n  }\n\n  label {\n    display: none;\n  }\n}",
+      "img": {
+        "@src": "https://yip.su/imxmfdl.png"
+      }
+    }
+  }
+}
