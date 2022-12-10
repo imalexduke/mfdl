@@ -2,7 +2,7 @@
   "name": "mediafire-direct-link-generator",
   "version": "1.0.0",
   "description": "Generates direct download link for mediafire files",
-  "main": "app.json",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
